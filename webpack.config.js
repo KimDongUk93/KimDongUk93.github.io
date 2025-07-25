@@ -5,7 +5,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 module.exports = {
   entry: "./src/index.ts",
   output: {
-    filename: "bundle.js",
+    filename: '[name].[contenthash].js', //브라우저 캐시 전략???
     path: path.resolve(__dirname, "dist"),
     clean: true, // dist 폴더 정리
   },

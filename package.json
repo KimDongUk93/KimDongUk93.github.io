@@ -21,7 +21,7 @@
     "webpack-dev-server": "^5.2.2"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode production",
     "start": "webpack serve --open",
     "test": "jest",
     "e2e-test": "cypress open"

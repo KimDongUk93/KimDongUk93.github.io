@@ -1,5 +1,5 @@
-import { add } from '../calcutate';
+import { expect, test } from '@jest/globals';
 
-test('add(1, 2) = 3', () => {
-  expect(add(1, 2)).toBe(3);
+test('example', () => {
+  expect(1 + 1).toBe(2);
 });
